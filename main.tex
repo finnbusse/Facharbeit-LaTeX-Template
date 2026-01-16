@@ -1,0 +1,102 @@
+\documentclass[12pt,a4paper]{article}
+
+\input{settings/metadata}
+\input{settings/preamble}
+\input{settings/layout}
+\input{settings/commands}
+
+\begin{document}
+
+\begin{titlepage}
+\noindent
+\begin{center}
+\includegraphics[height=2.6cm]{assets/images/leo.png}\hspace{0.8cm}%
+\rule{0.4pt}{2.6cm}\hspace{0.8cm}%
+\includegraphics[height=2.6cm]{assets/images/grabbe.jpg}
+\end{center}
+
+\vspace*{\fill}
+
+\begin{center}
+{\Large \textcolor{AccentBlue}{\textbf{\arbeitstitel}}}
+\end{center}
+
+\vspace{1.2cm}
+
+\begin{center}
+\begin{tabular}{ll}
+Name: & \autorname \\
+Schule: & \schule \\
+Koop.-Schule: & \kooperationsschule \\
+Kurs: & \fach\\
+Lehrer: & \lehrkraft \\
+Abgabedatum: & \abgabedatum \\
+\end{tabular}
+\end{center}
+
+\vspace*{\fill}
+
+\begin{center}
+{\small \copyright\ \autorname\ \jahr}
+\end{center}
+\end{titlepage}
+
+\pagenumbering{gobble}
+\pagestyle{tocstyle}
+\tableofcontents
+\addtocontents{toc}{\vspace{1cm}}
+\clearpage
+
+\pagenumbering{arabic}
+\setcounter{page}{1}
+\pagestyle{normalstyle}
+
+\newgeometry{
+  a4paper,
+  top=2.5cm,
+  bottom=2.5cm,
+  left=4cm,
+  right=2cm
+}
+
+\input{content/01_einleitung}
+\input{content/02_hauptteil}
+\input{content/03_fazit}
+
+\restoregeometry
+
+\clearpage
+\addtocontents{toc}{\vspace{1cm}}
+\addcontentsline{toc}{section}{Literaturverzeichnis}
+\printbibliography
+
+\clearpage
+\input{content/91_ki_tools}
+
+\clearpage
+\input{content/90_erklaerung}
+
+\clearpage
+\thispagestyle{empty}
+
+\vspace*{\fill}
+\begin{center}
+{\Huge Anhang}
+\end{center}
+\vspace*{\fill}
+\clearpage
+
+\setcounter{page}{1}
+\renewcommand{\thepage}{A-\arabic{page}}
+
+\setcounter{secnumdepth}{-1}
+\setcounter{tocdepth}{-1}
+
+\input{appendix/01_code}
+
+\clearpage
+\renewcommand{\thepage}{\arabic{page}}
+
+\input{content/99_copyright}
+
+\end{document}
