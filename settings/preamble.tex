@@ -1,0 +1,44 @@
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+\usepackage[a4paper,margin=2.5cm]{geometry}
+
+\usepackage{setspace}
+\onehalfspacing
+
+\usepackage{graphicx}
+\usepackage{svg}
+
+\usepackage{xcolor}
+\definecolor{AccentBlue}{RGB}{31,78,121}
+\definecolor{DropcapRed}{RGB}{150,30,30}
+\usepackage{lettrine}
+
+\usepackage{csquotes}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\usepackage{biblatex}
+\addbibresource{bib/literature.bib}
+\addbibresource{bib/internet.bib}
+\addbibresource{bib/gen-ai.bib}
+
+\DeclareDatamodelFields[type=field,datatype=literal]{%
+  tool,model,kitype,usecase,adoption,location,chatlink
+}
+\DeclareDatamodelEntryfields{%
+  tool,model,kitype,usecase,adoption,location,chatlink
+}
+
+\ExecuteBibliographyOptions{url=true,doi=false,isbn=false}
+
+\BiblatexSplitbibDefernumbersWarningOff
+
+\DefineBibliographyStrings{ngerman}{
+  bibliography = {Literaturverzeichnis}
+}
+
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}

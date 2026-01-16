@@ -1,0 +1,31 @@
+\newcommand{\fncite}[1]{\footnote{\cite{#1}}}
+
+\newcommand{\aicite}[1]{%
+  \footnote{Enth√§lt KI-generierten Inhalt: siehe Transparenzerkl√§rung KI, Eintrag #1.}%
+}
+
+\newcommand{\dropcap}[2]{%
+  \lettrine[
+    lines=2,
+    lhang=0.08,
+    findent=0.2em,
+    nindent=0em
+  ]{\textcolor{DropcapRed}{\normalfont #1}}{\normalfont #2}%
+}
+
+\newcommand{\chapter}[1]{%
+  \clearpage
+  \thispagestyle{chapterfirst}
+  \vspace*{0.5cm}
+  {\color{AccentBlue}\section{#1}}%
+  \vspace{0.5cm}
+}
+
+\newcommand{\chapterdc}[3]{%
+  \clearpage
+  \thispagestyle{chapterfirst}
+  \vspace*{0.5cm}
+  {\color{AccentBlue}\section{#1}}%
+  \vspace{0.5cm}
+  \dropcap{#2}{#3}\par\medskip
+}
