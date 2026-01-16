@@ -1,0 +1,35 @@
+name: Build LaTeX PDF
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # Builds with a full TeX Live environment
+      - name: Compile LaTeX
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: main.tex
+          # If you use biblatex+biber, keep this:
+          latexmk_use_lualatex: false
+          latexmk_use_xelatex: false
+          args: -pdf -interaction=nonstopmode -file-line-error
+          # auto-run biber when needed:
+          latexmk_shell_escape: true
+
+      - name: Upload PDF artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Facharbeit-PDF
+          path: |
+            *.pdf
+            **/*.pdf
