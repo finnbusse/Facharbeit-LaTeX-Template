@@ -1,0 +1,26 @@
+\section*{Anhang A: Codebeispiele}
+
+\subsection*{Beispiel 1 – Pseudocode}
+
+\begin{verbatim}
+initialize population
+while not solved:
+    evaluate fitness
+    select best individuals
+    mutate and crossover
+return best network
+\end{verbatim}
+
+\subsection*{Beispiel 2 – Python-Dummy}
+
+\begin{verbatim}
+def fitness(score, time_alive):
+    return score * 10 + time_alive
+
+class Agent:
+    def __init__(self):
+        self.weights = []
+
+    def act(self, state):
+        return 1
+\end{verbatim}
