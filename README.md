@@ -1,133 +1,244 @@
-# Facharbeit LaTeX Template
-(Dokumentation mithilfe von KI erstellt)
-Dieses Repository enthält ein strukturiertes und modernes LaTeX-Template zur Erstellung von Facharbeiten in der gymnasialen Oberstufe.
-Das Template ist darauf ausgelegt, Inhalt, Layout und Metadaten sauber zu trennen und eignet sich besonders für längere wissenschaftspropädeutische Arbeiten.
+<div align="center">
+
+# 📚 Facharbeit LaTeX Template
+
+### Professionelles LaTeX-Template für wissenschaftspropädeutische Arbeiten
+
+[![LaTeX](https://img.shields.io/badge/LaTeX-008080?style=for-the-badge&logo=latex&logoColor=white)](https://www.latex-project.org/)
+[![License](https://img.shields.io/badge/Lizenz-Frei_für_Schulen-blue?style=for-the-badge)](LICENSE)
+[![Made with Love](https://img.shields.io/badge/Made_with-❤️-red?style=for-the-badge)](https://github.com/finnbusse)
+
+*Dokumentation mithilfe von KI erstellt*
+
+[Features](#-features) • [Schnellstart](#-schnellstart) • [Projektstruktur](#-projektstruktur) • [Anpassung](#-inhalte-anpassen) • [Dokumentation](#-literaturverzeichnis)
+
+</div>
 
 ---
 
-## Ziel des Templates
+## 🎯 Über das Template
 
-* Einheitliches, professionelles Layout
-* Klare und wartbare Projektstruktur
-* Einfache Anpassbarkeit ohne Eingriff in den Haupttext
-* Saubere Trennung von
+Dieses Repository enthält ein **strukturiertes und modernes LaTeX-Template** zur Erstellung von Facharbeiten in der gymnasialen Oberstufe. Das Template ist darauf ausgelegt, Inhalt, Layout und Metadaten sauber zu trennen und eignet sich besonders für längere wissenschaftspropädeutische Arbeiten.
 
-  * Inhalt
-  * Design
-  * Dokument-Metadaten
+## ✨ Features
+
+<table>
+<tr>
+<td width="50%">
+
+### 🎨 **Design & Layout**
+- ✅ Einheitliches, professionelles Layout
+- ✅ Moderne Seitengestaltung
+- ✅ Anpassbare Kopf- und Fußzeilen
+- ✅ Professionelle Titelseite
+
+</td>
+<td width="50%">
+
+### 🔧 **Struktur & Organisation**
+- ✅ Klare und wartbare Projektstruktur
+- ✅ Strikte Trennung von Inhalt & Design
+- ✅ Modularer Aufbau
+- ✅ Einfache Anpassbarkeit
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+### 📖 **Funktionalität**
+- ✅ Automatisches Literaturverzeichnis
+- ✅ Abbildungs- und Tabellenverzeichnis
+- ✅ Anhang-Verwaltung
+- ✅ KI-Nutzungsnachweis
+
+</td>
+<td width="50%">
+
+### 🚀 **Verwendung**
+- ✅ Facharbeiten
+- ✅ Projektarbeiten
+- ✅ Wissenschaftspropädeutische Arbeiten
+- ✅ Seminararbeiten
+
+</td>
+</tr>
+</table>
 
 ---
 
-## Projektstruktur
+## 📁 Projektstruktur
 
+```
 Facharbeit-LaTeX-Template/
 │
-├─ main.tex – Zentrale Hauptdatei
+├── 📄 main.tex                    # Zentrale Hauptdatei
 │
-├─ settings/
-│   ├─ metadata.tex – Titel, Autor, Schule, Kurs
-│   ├─ preamble.tex – Pakete und Grundeinstellungen
-│   ├─ layout.tex – Seitenlayout, Kopf- und Fußzeilen
-│   └─ commands.tex – Eigene Befehle und Abkürzungen
+├── ⚙️  settings/                   # Konfiguration & Einstellungen
+│   ├── metadata.tex               # Titel, Autor, Schule, Kurs
+│   ├── preamble.tex               # Pakete und Grundeinstellungen
+│   ├── layout.tex                 # Seitenlayout, Kopf- und Fußzeilen
+│   └── commands.tex               # Eigene Befehle und Abkürzungen
 │
-├─ assets/
-│   └─ images/ – Logos und Abbildungen
+├── 🎨 assets/                      # Ressourcen
+│   ├── images/                    # Logos und Abbildungen
+│   └── tables/                    # Externe Tabellen
 │
-├─ chapters/ – Inhaltliche Kapitel
+├── 📝 content/                     # Inhaltliche Kapitel
+│   ├── 01_einleitung.tex
+│   ├── 99_copyright.tex
+│   └── ...
 │
-└─ bibliography/
-  └─ references.bib – Literaturverzeichnis
+├── 📚 bib/                         # Literaturverwaltung
+│   ├── literature.bib             # Bücher und Artikel
+│   ├── internet.bib               # Internetquellen
+│   └── gen-ai.bib                 # KI-Quellen
+│
+└── 📎 appendix/                    # Anhang
+    └── 01_code.tex
+```
 
 ---
 
-## Schnellstart
+## 🚀 Schnellstart
 
-### Projekt herunterladen
+### 1️⃣ Projekt herunterladen
 
-* Repository klonen
-* oder über **Code → Download ZIP** herunterladen
+**Option A: Git Clone**
+```bash
+git clone https://github.com/finnbusse/Facharbeit-LaTeX-Template.git
+cd Facharbeit-LaTeX-Template
+```
 
-### Kompilieren
+**Option B: ZIP-Download**
+- Klicke auf **Code → Download ZIP**
+- Entpacke das Archiv
 
-Empfohlene Umgebungen:
+### 2️⃣ Kompilieren
 
-* Overleaf
-* TeXstudio
-* VS Code mit LaTeX Workshop
+#### Empfohlene Umgebungen:
 
-Kompilationsreihenfolge:
-pdflatex → biber → pdflatex → pdflatex
+| Tool | Beschreibung |
+|------|-------------|
+| 🌐 **[Overleaf](https://www.overleaf.com/)** | Online LaTeX-Editor (empfohlen für Einsteiger) |
+| 💻 **[TeXstudio](https://www.texstudio.org/)** | Desktop-Editor mit integrierter Vorschau |
+| 🆚 **[VS Code](https://code.visualstudio.com/)** | Mit LaTeX Workshop Extension |
 
----
+#### Kompilationsreihenfolge:
+```bash
+pdflatex main.tex
+biber main
+pdflatex main.tex
+pdflatex main.tex
+```
 
-## Inhalte anpassen
-
-### Metadaten ändern
-
-Datei: settings/metadata.tex
-
-Beispiel:
-\newcommand{\autorname}{Finn Busse}
-\newcommand{\arbeitstitel}{Der NEAT-Algorithmus}
-\newcommand{\schule}{Christian-Dietrich-Grabbe-Gymnasium}
-
----
-
-### Kapitel schreiben
-
-Alle Texte liegen im Ordner chapters.
-In main.tex werden sie eingebunden:
-
-\input{chapters/einleitung}
-\input{chapters/theorie}
-\input{chapters/fazit}
+> **💡 Tipp:** In den meisten LaTeX-Editoren genügt ein Klick auf „Kompilieren", die Reihenfolge wird automatisch ausgeführt.
 
 ---
 
-### Bilder einfügen
+## 🛠️ Inhalte anpassen
 
-Dateien ablegen in: assets/images/
+### 📋 Metadaten ändern
 
-Einbindung im Text:
-\includegraphics[width=0.8\textwidth]{assets/images/logo.png}
+Öffne `settings/metadata.tex` und passe die Angaben an:
+
+```latex
+\newcommand{\autorname}{Dein Name}
+\newcommand{\arbeitstitel}{Dein Arbeitstitel}
+\newcommand{\schule}{Deine Schule}
+\newcommand{\kurs}{Dein Kurs}
+\newcommand{\fach}{Dein Fach}
+\newcommand{\abgabedatum}{TT.MM.JJJJ}
+```
+
+### ✍️ Kapitel schreiben
+
+1. Erstelle oder bearbeite Dateien im Ordner `content/`
+2. Binde sie in `main.tex` ein:
+
+```latex
+\input{content/01_einleitung}
+\input{content/02_hauptteil}
+\input{content/03_fazit}
+```
+
+### 🖼️ Bilder einfügen
+
+1. Lege Bilder in `assets/images/` ab
+2. Binde sie im Text ein:
+
+```latex
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.8\textwidth]{assets/images/mein-bild.png}
+  \caption{Beschreibung des Bildes}
+  \label{fig:mein-bild}
+\end{figure}
+```
+
+### 📚 Literatur zitieren
+
+1. Füge Quellen in `bib/literature.bib` hinzu:
+
+```bibtex
+@book{mustermann2023,
+  author = {Max Mustermann},
+  title = {Ein tolles Buch},
+  year = {2023},
+  publisher = {Beispielverlag}
+}
+```
+
+2. Zitiere im Text:
+
+```latex
+\cite{mustermann2023}
+```
 
 ---
 
-## Literaturverzeichnis
+## 🎓 Erweiterte Features
 
-* Quellen werden in bibliography/references.bib gepflegt
-* Zitieren im Text:
-  \cite{neat2002}
+Das Template kann einfach um folgende Elemente erweitert werden:
 
----
-
-## Besonderheiten
-
-* Strikte Trennung von Design und Inhalt
-* Geeignet für
-
-  * Facharbeiten
-  * Projektarbeiten
-  * wissenschaftspropädeutische Arbeiten
-* Einfach erweiterbar um
-
-  * Abkürzungsverzeichnis
-  * Abbildungsverzeichnis
-  * Anhang
-  * KI-Nutzungsnachweis
+- 📑 **Abkürzungsverzeichnis** – Liste verwendeter Abkürzungen
+- 🖼️ **Abbildungsverzeichnis** – Automatische Auflistung aller Abbildungen
+- 📊 **Tabellenverzeichnis** – Übersicht aller Tabellen
+- 📎 **Anhang** – Für zusätzliche Materialien
+- 🤖 **KI-Nutzungsnachweis** – Dokumentation von KI-Unterstützung
 
 ---
 
-## Lizenz und Nutzung
+## 📄 Lizenz und Nutzung
 
-Dieses Template darf frei für schulische und private Zwecke verwendet und angepasst werden.
-Bei Weitergabe oder Veröffentlichung bitte einen Hinweis auf dieses Repository beibehalten.
+Dieses Template darf **frei für schulische und private Zwecke** verwendet und angepasst werden. Bei Weitergabe oder Veröffentlichung bitte einen Hinweis auf dieses Repository beibehalten.
+
+```
+MIT-ähnliche Lizenz – Frei verwendbar mit Quellenangabe
+```
 
 ---
 
-## Autor
+## 👨‍💻 Autor
 
-Finn Busse
-Schüler · Informatik · LaTeX
+<div align="center">
 
-GitHub: [https://github.com/finnbusse](https://github.com/finnbusse)
+**Finn Busse**
+
+*Schüler · Informatik · LaTeX*
+
+[![GitHub](https://img.shields.io/badge/GitHub-finnbusse-181717?style=for-the-badge&logo=github)](https://github.com/finnbusse)
+
+</div>
+
+---
+
+<div align="center">
+
+### ⭐ Gefällt dir das Template?
+
+Gib dem Projekt einen **Stern** auf GitHub!
+
+**Viel Erfolg bei deiner Facharbeit!** 🎓
+
+</div>
