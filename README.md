@@ -84,7 +84,7 @@ Facharbeit-LaTeX-Template/
 │   ├── images/                    # Logos und Abbildungen
 │   └── tables/                    # Externe Tabellen
 │
-├── 📝 content/                     # Inhaltliche Kapitel
+├── 📝 content/                     # Inhaltliche Kapitel und Dokumente
 │   ├── 01_einleitung.tex
 │   ├── 99_copyright.tex
 │   └── ...
@@ -213,9 +213,7 @@ Das Template kann einfach um folgende Elemente erweitert werden:
 
 Dieses Template darf **frei für schulische und private Zwecke** verwendet und angepasst werden. Bei Weitergabe oder Veröffentlichung bitte einen Hinweis auf dieses Repository beibehalten.
 
-```
-MIT-ähnliche Lizenz – Frei verwendbar mit Quellenangabe
-```
+> **Lizenz:** Frei verwendbar mit Quellenangabe (MIT-ähnlich)
 
 ---
 
